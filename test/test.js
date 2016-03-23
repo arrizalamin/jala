@@ -1,8 +1,6 @@
 const expect = require('expect')
 const objectSwitch = require('../index')
 
-const nodeVersion = parseInt(process.versions.node.substr(0,1))
-
 describe('Test', () => {
   const obj = {
     a: '1',
@@ -90,13 +88,11 @@ describe('Test', () => {
     expect(condition).toEqual(false)
   })
 
-  if (nodeVersion >= 5) {
-    it('should throw exception callback argument is spread operator', () => {
-      expect(() => {
-        objectSwitch(obj, (a, ...foo) => {
-          console.log(foo)
-        })
-      }).toThrow(/spread/)
-    })
-  }
+  it('should throw exception callback argument is spread operator', () => {
+    expect(() => {
+      objectSwitch(obj, (a, ...foo) => {
+        console.log(foo)
+      })
+    }).toThrow(/spread/)
+  })
 })
