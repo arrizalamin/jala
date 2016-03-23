@@ -1,0 +1,31 @@
+{
+  "name": "jala",
+  "version": "1.0.0",
+  "description": "Functional Pattern Matching",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony_rest_parameters --harmony_destructuring --harmony_default_parameters index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arrizalamin/jala"
+  },
+  "keywords": [
+    "functional",
+    "pattern",
+    "matching"
+  ],
+  "author": "Arrizal Amin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arrizalamin/jala/issues"
+  },
+  "dependencies": {
+    "js-function-reflector": "^1.0.5"
+  },
+  "devDependencies": {
+    "expect": "^1.15.2",
+    "mocha": "^2.4.5"
+  }
+}
